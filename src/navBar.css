@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:active {
+    color: black;
+    font-weight: 800;
+}

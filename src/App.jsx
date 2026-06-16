@@ -1,21 +1,25 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import './navBar';
 import Navbar from './navBar';
+import Home from "./navigation/Home";
+// import About from "./navigation/About";
+// import News from "./navigation/News";
+// import Contact from "./navigation/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-       <h1>
-        NewsMonkey is a news app which ca be used to grab quick news bites. 
-       </h1>
-       <Navbar></Navbar>
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
