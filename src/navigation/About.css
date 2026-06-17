@@ -1,0 +1,61 @@
+.about-container {
+    padding: 20px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: azure; */
+}
+
+.about-card {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-description {
+    background-color: rgba(206, 206, 206, 0.356);
+    
+    padding: 20px 15px;
+    border-radius: 30px;
+}
+
+.about-description h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.about-description p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-title span {
+    color: #ff0000;
+}
+
+.features-and-tech {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.side {
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 250px;
+}
+
+.side ul li {
+    font-size: 20px;
+    list-style-type: none;
+    line-height: 2;
+}
+
+.features {
+    background-color: bisque;
+}
+
+.tech-used {
+    background-color: bisque;
+}

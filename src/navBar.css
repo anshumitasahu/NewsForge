@@ -1,11 +1,15 @@
 nav {
     display: flex;
-
     justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    /* padding: 1rem 2rem; */
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -15,10 +19,18 @@ nav ul {
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .nav a:active {
     color: black;
     font-weight: 800;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo span {
+    color: #ff0000;
 }
