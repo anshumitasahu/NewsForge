@@ -1,4 +1,5 @@
 import './About.css'
+import newsImage from '../img/news(breakingnewz).avif';
 
 export default function About() {
     return (
@@ -17,6 +18,25 @@ export default function About() {
                     <p>
                         We believe information should be easy to access without unnecessary clutter. NewsForge focuses on providing a clean reading experience, helping users discover important stories quickly.
                     </p>
+                    <div className='img'>
+                        <img src={newsImage} alt="" />
+                    </div>
+                    <div className="about-stats">
+                        <div>
+                            <h3>6+</h3>
+                            <p>News Categories</p>
+                        </div>
+
+                        <div>
+                            <h3>24/7</h3>
+                            <p>News Updates</p>
+                        </div>
+
+                        <div>
+                            <h3>100%</h3>
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="features-and-tech">
                     <div className="side features">
@@ -51,9 +71,12 @@ export default function About() {
                 <p>
                     To create a reliable and user-friendly platform that helps people stay informed about the events shaping the world.
                 </p>
-                <p>
+                <p className='mission-last-para'>
                     NewsForge is an ongoing project and will continue to evolve with new features and improvements.
                 </p>
+                <div className='mission-note'>
+                    Created as a personal web development project to practice React and API integration
+                </div>
             </div>
         </div >
     )
