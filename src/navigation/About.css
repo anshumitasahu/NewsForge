@@ -26,7 +26,7 @@
 
 .about-description h1 {
     margin-bottom: 10px;
-    width: 800px;
+    width: 1050px;
     font-size: 40px;
     text-align: left;
 }
@@ -86,9 +86,9 @@
 .side ul li {
     font-size: 20px;
     list-style-type: circle;
-    line-height: 1.7;
+    line-height: 1.5;
     color: rgba(243, 243, 243, 0.911);
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 .mission {
@@ -120,7 +120,7 @@
     padding-top: 2px;
 }
 
-.about-description,
+/* .about-description,
 .side,
 .mission {
     transition: transform 0.3s ease;
@@ -129,5 +129,5 @@
 .about-description:hover,
 .side:hover,
 .mission:hover {
-    transform: translateY(-4px);
-}
+    transform: translateY(-4px); */
+/* } */

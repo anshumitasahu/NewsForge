@@ -3,8 +3,11 @@ import './App.css';
 import Navbar from './navBar';
 import Home from "./navigation/Home";
 import About from "./navigation/About";
-// import News from "./navigation/News";
-// import Contact from "./navigation/Contact";
+import News from "./navigation/News";
+import Tech from "./navigation/Tech"
+import Politics from "./navigation/politics"
+import Sports from "./navigation/Sports"
+import Contact from "./navigation/Contact";
 
 function App() {
 
@@ -14,8 +17,11 @@ function App() {
       <Routes>
         <Route path="/Home" element={<Home />} />
          <Route path="/about" element={<About />} />
-        {/* <Route path="/news" element={<News />} />
-        <Route path="/contact" element={<Contact />} /> */}
+         <Route path="/news" element={<News />} />
+         <Route path="/tech" element={<Tech />} />
+         <Route path="/politics" element={<Politics />} />
+         <Route path="/sports" element={<Sports />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 
-export default function News() {
+export default function Tech() {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        fetch("https://newsapi.org/v2/top-headlines?category=business&apiKey=6097f6cb4ee845e38468604b491f2e0b")
+        fetch("https://newsapi.org/v2/top-headlines?category=sports&apiKey=6097f6cb4ee845e38468604b491f2e0b")
             .then(response => response.json())
             .then(data => {
                 setArticles(data.articles);
@@ -14,9 +14,10 @@ export default function News() {
                 console.log(error);
             });
     }, []);
+
     return (
         <>
-            <h1 className='heading'>News Related To <span>Business</span></h1>
+            <h1 className='heading'>News Related To <span>Sports</span></h1>
             <div className="news-card">
                 {articles.map((article, index) => (
                     <div className="news-container" key={article.url}>

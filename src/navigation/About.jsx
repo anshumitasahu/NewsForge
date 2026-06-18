@@ -1,5 +1,5 @@
 import './About.css'
-import newsImage from '../img/news(breakingnewz).avif';
+import newsImage from '../img/Gemini_Generated_Image_gs3blbgs3blbgs3b.png';
 
 export default function About() {
     return (
@@ -54,7 +54,7 @@ export default function About() {
                     </div>
                     <div className="side tech-used">
                         <h2>
-                            Technology Stack :
+                            Technology Stack:
                         </h2>
                         <ul>
                             <li>React</li>
