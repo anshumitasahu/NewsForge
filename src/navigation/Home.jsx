@@ -8,14 +8,6 @@ export default function Home(props) {
         <>
             <div className='news-card'>
                 <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
-                <HomeNews></HomeNews>
             </div>
         </>
     )

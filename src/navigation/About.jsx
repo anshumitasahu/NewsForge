@@ -49,6 +49,7 @@ export default function About() {
                             <li>Fast and intuitive user interface</li>
                             <li>Global news coverage</li>
                             <li>Multiple news categories</li>
+                            <li>API-powered news delivery</li>
                         </ul>
                     </div>
                     <div className="side tech-used">
