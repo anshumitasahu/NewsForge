@@ -33,8 +33,8 @@ export default function About() {
                         </div>
 
                         <div>
-                            <h3>100%</h3>
-                            <p>Responsive Design</p>
+                            <h3>Live</h3>
+                            <p>API-Powered Updates</p>
                         </div>
                     </div>
                 </div>
@@ -46,8 +46,9 @@ export default function About() {
                         <ul>
                             <li>Real-time news updates</li>
                             <li>Category-based browsing</li>
-                            <li>Responsive design for desktop and mobile</li>
                             <li>Fast and intuitive user interface</li>
+                            <li>Global news coverage</li>
+                            <li>Multiple news categories</li>
                         </ul>
                     </div>
                     <div className="side tech-used">
