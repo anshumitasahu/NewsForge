@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import newsImage from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/img/news(breakingnewz).avif';
+import Spinner from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/navigation/components/loadingSpinner.jsx';
 
 export default function News() {
     const [articles, setArticles] = useState([]);
     const [page, setPage] = useState(1);
     const [totalResults, setTotalResults] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setLoading(true);
+
         fetch(`https://newsapi.org/v2/top-headlines?category=business&apiKey=6097f6cb4ee845e38468604b491f2e0b&page=${page}&pageSize=8`)
             .then(response => response.json())
             .then(data => {
                 setArticles(data.articles);
                 setTotalResults(data.totalResults);
+                setLoading(false);
             })
             .catch(error => {
                 console.log(error);
+                setLoading(false);
             });
     }, [page]);
 
@@ -33,6 +39,11 @@ export default function News() {
         console.log("next");
         setPage(page + 1);
     }
+
+    if (loading) {
+        return <Spinner />;
+    }
+
     return (
         <>
             <div className="news-card">
