@@ -78,3 +78,28 @@
     text-decoration: none;
     border-radius: 6px;
 }
+
+.buttons-page {
+    margin-top: 50px;
+    /* background-color: beige; */
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-btn {
+    background-color: #dc2626;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.page-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
