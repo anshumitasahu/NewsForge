@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import newsImage from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/img/news(breakingnewz).avif';
 import './Home.css';
+import Spinner from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/navigation/components/loadingSpinner.jsx';
+
 
 export default function Tech() {
     const [articles, setArticles] = useState([]);
     const [page, setPage] = useState(1);
     const [totalResults, setTotalResults] = useState([]);
+    const [loading, setLoading] = useState(true);
+
 
     useEffect(() => {
+        setLoading(true);
+
         fetch(`https://newsapi.org/v2/top-headlines?category=sports&apiKey=6097f6cb4ee845e38468604b491f2e0b&page=${page}&pageSize=8`)
             .then(response => response.json())
             .then(data => {
                 setArticles(data.articles);
-                setTotalResults(data.totalResults)
+                setTotalResults(data.totalResults);
+                setLoading(false);
             })
             .catch(error => {
                 console.log(error);
+                setLoading(false);
             });
     }, [page]);
 
@@ -32,6 +40,14 @@ export default function Tech() {
     const handleNxtClick = () => {
         console.log("next");
         setPage(page + 1);
+    }
+
+    if (loading) {
+        return (
+            <div className="spinner-container">
+                <Spinner />
+            </div>
+        );
     }
 
     return (

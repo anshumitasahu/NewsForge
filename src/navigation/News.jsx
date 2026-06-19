@@ -41,7 +41,11 @@ export default function News() {
     }
 
     if (loading) {
-        return <Spinner />;
+        return (
+            <div className="spinner-container">
+                <Spinner />
+            </div>
+        );
     }
 
     return (

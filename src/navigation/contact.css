@@ -1,0 +1,86 @@
+
+
+/* Card Container */
+.contact-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h2 {
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.contact-card p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* Form Layout */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+/* Full-width Inputs and Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Forces input to take full card width */
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Textarea resize control */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Input Focus States */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4f46e5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Full-width Submit Button */
+.submit-btn {
+    /* width: 100%; */
+    background-color: #4f46e5;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #4338ca;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}

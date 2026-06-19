@@ -1,22 +1,29 @@
 import newsImage from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/img/news(breakingnewz).avif';
 import React, { useState, useEffect } from 'react';
-
+import Spinner from '/home/rem/Desktop/learn/react/newsapp/newsForge/src/navigation/components/loadingSpinner.jsx';
 
 export default function HomeNews() {
 
     const [articles, setArticles] = useState([]);
     const [page, setPage] = useState(1);
     const [totalResults, setTotalResults] = useState([]);
+    const [loading, setLoading] = useState(true);
+
 
     useEffect(() => {
+        setLoading(true);
+
         fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=6097f6cb4ee845e38468604b491f2e0b&page=${page}&pageSize=8`)
             .then(response => response.json())
             .then(data => {
                 setArticles(data.articles);
                 setTotalResults(data.totalResults);
+                setLoading(false);
+
             })
             .catch(error => {
                 console.log(error);
+                setLoading(false);
             });
     }, [page]);
 
@@ -41,6 +48,15 @@ export default function HomeNews() {
     // console.log(articles)
     // console.log(articles[0].title)
     // console.log(articles[0].urlToImage)
+
+    if (loading) {
+        return (
+            <div className="spinner-container">
+                <Spinner />
+            </div>
+        );
+    }
+
     return (
         <>
             <h1 className='heading'>Top <span>Headlines</span></h1>
