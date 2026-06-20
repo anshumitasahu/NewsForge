@@ -16,7 +16,7 @@ export default function Contact() {
                 <div className="upper-sec">
                     <div className="img-sec">
                         <div className="img-sec-content">
-                            <h1>Contact News<span>Forge</span></h1>
+                            <h1>Let's Connect</h1>
                             <p>Have feedback, suggestions <br /> or inquires?</p>
                             <p>We'd love hear from you.</p>
                         </div>
