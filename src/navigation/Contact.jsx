@@ -17,7 +17,7 @@ export default function Contact() {
                     <div className="img-sec">
                         <div className="img-sec-content">
                             <h1>Contact News<span>Forge</span></h1>
-                            <p>Have feedback, suggestions <br/> or inquires?</p>
+                            <p>Have feedback, suggestions <br /> or inquires?</p>
                             <p>We'd love hear from you.</p>
                         </div>
                         <div className="img-sec-img">
@@ -76,9 +76,22 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="lower-sec">
+                <div className="lower-sec">
                     <h1>Frequently Asked Questions</h1>
-                </div> */}
+                    <div className="faq">
+                        <div className="faqs-divs">
+                        <span className="q">Q. What is NewsForge?</span><br/>
+                        <span className="a">A. NewsForge is a news aggregation platform that brings together headlines from multiple categories in one place.</span>
+                    </div>
+                    <div className="faqs-divs">
+                        <span className="q">Q. Where does the news come from?</span><br/>
+                        <span className="a">A. News articles are fetched from trusted third-party news APIs.</span>
+                    </div>
+                    <div className="faqs-divs">
+                        <span className='q'>Q. How can I share feedback or report an issue?</span><br/>
+                        <span className='a'>A. Simply use the contact form and your message will be reviewed.</span></div>
+                </div>
+                    </div>
             </div>
         </>
     )
